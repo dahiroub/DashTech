@@ -1,0 +1,227 @@
+/* header */
+header{
+    background-color: rgb(40, 90, 216);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+header nav {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+nav li{
+    list-style-type: none;
+}
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition-property: font-size , text-decoration;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+nav a:hover{
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+/* reseau btn */
+/* Style du bloc principal */
+.reseau {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f5f5f5; /* Couleur de fond légère */
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Titre */
+.reseau h2 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Liste des icônes */
+.reseau ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Icônes elles-mêmes */
+.reseau li a {
+    font-size: 36px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Hover effet interactif */
+.reseau li a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Couleur spécifique à chaque réseau */
+.reseau li:nth-child(1) a { color: #3b5998; } /* Facebook */
+.reseau li:nth-child(2) a { color: #1DA1F2; } /* Twitter/X */
+.reseau li:nth-child(3) a { color: #E1306C; } /* Instagram */
+
+
+.Pcbureau{
+    margin-top: 10%;
+}
+header h1{
+    margin-left: 20px;
+}
+header h1 a {
+    color: white ;
+    text-decoration: none;
+
+}
+
+/* .Pcgamer{
+    background-color: lightgray;
+}
+.Pcetudiant{
+    background-color: antiquewhite;
+}
+
+.macbook{
+    background-color: rgb(255, 255, 255);
+} */ 
+
+
+.grid-bureau{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+
+}
+.grid-bureau img{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 175, 221);
+    
+}
+
+.grid-gamer{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+.grid-gamer img{
+    width: 400;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 175, 221);
+}
+
+.grid-etudiant{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+
+}
+.grid-etudiant img {
+    width: 400;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 175, 221);
+}
+
+.grid-macbook{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+
+}
+
+.grid-macbook img {
+    width: 400;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 175, 221);
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+/* contact.html */
+
+.contact-main{
+    margin-top: 10%;
+}
+
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .laptop-grid {
+            margin-top: 10% ;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .laptop-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .laptop-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .laptop-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .laptop-card h3 {
+            margin: 10px 0;
+            color: #0073e6;
+        }
+
+        .laptop-card p {
+            color: #555;
+            font-size: 16px;
+        }
